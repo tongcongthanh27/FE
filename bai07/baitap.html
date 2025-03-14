@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: #92DFC8;
+            padding: 20px;
+            text-align: center;
+        }
+        .main1{
+            display: flex;
+        }
+        .content{
+            background-color: #CAEFF2;
+            width: 70%;
+            padding: 20px;
+            height: 600px;
+            text-align: center;
+        }
+        .aside{
+            background-color: #F2D8CA;
+            width: 30%;
+            height: 600px;
+            padding: 20px;
+            text-align: center;
+        }
+        .main2{
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .box{
+            background-color: #F2F1CA;
+            width: calc(25% - 7.5px);
+            padding: 20px;
+            height: 150px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .footer{
+            background-color: palevioletred;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+
+    <div class="header">Header</div>
+    <div class="main1">
+        <div class="content">content</div>
+        <div class="aside">aside</div>
+    </div>
+    <div class="main2">
+        <div class="box 1">box1</div>
+        <div class="box 2">box2</div>
+        <div class="box 3">box3</div>
+        <div class="box 4">box4</div>
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

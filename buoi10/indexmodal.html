@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../bootstrap.min.css">
+</head>
+
+<body>
+    <script src="../jquery.slim.min.js"></script>
+    <script src="../bootstrap.bundle.min.js"></script>
+    
+    <style>
+        .modal-content{
+            border-radius: 10px;
+        }
+        .modal-header{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .modal-form .modal-header .close{
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            background-color: black;
+            opacity: 1;
+            color: white;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-header img{
+            height: 50px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+        .button{
+            background-color: orange;
+            color: white;
+            width: 100%;
+            padding: 10px;
+            border-radius: 45px;
+        }
+    </style>
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade modal-form" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="inner-img" src="https://cdn.daca.vn/media/logo/logo.svg" alt="">
+                    <h5 class="inner-title">Gửi yêu cầu tư vấn miễn phí</h5>
+                    <p class="inner-desc">38.000+ doanh nghiệp & chủ shop đã tin dùng</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Ho va ten *">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="SDT *">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Linh vuc kinh doanh *">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="button">
+                                    Gui yeu cau
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

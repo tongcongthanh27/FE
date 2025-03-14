@@ -1,0 +1,39 @@
+.color-red{
+    color: red;
+}
+#color-green{
+    color: greenyellow;
+}
+.cau2{
+    width: 200px;
+    height: 100px;
+    background-color: #006C00;
+}
+
+.cau2y2{
+    width: 100%;
+    height: 200px;
+    background-image: url(../photo-11-16718809395541585596813.webp);
+    background-attachment: fixed
+}
+
+.cau31{
+    background-color: #006300;
+    border: 10px solid #000;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+}
+
+.cau32{
+    background-color: red;
+    border: 10px dashed #98999A;
+    padding: 30px;
+    margin: 20px;
+    text-align: right;
+}
+.kieuchu {
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+  }

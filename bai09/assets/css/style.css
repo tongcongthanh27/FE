@@ -1,0 +1,49 @@
+.section-one{
+    background-color: #F9FCF9;
+    padding: 100px 0;
+}
+.section-one .inner-box i{
+    color: #5CB874;
+    font-size: 38px;
+    margin:15px 0;
+}
+.section-one .inner-box .inner-title{
+    color: #5CB874;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.section-one .inner-box .inner-desc{
+    font-size: 15px;
+}
+
+.section-two .inner-image img{
+    width: 100%;
+    height: auto;
+}
+.section-two .inner-head {
+    text-align: center;
+}
+@media (max-width: 1199.98px) {
+    /* Code… */
+  }
+  
+  /* Kích thước nhỏ hơn 992px */
+  @media (max-width: 991.98px) {
+    .section-two .inner-left{
+        order: 1;
+    }
+    .section-two .inner-content{
+        margin-top: 30px;
+    }
+  }
+  
+  /* Kích thước nhỏ hơn 768px */
+  @media (max-width: 767.98px) {
+    /* Code… */
+  }
+  
+  /* Kích thước nhỏ hơn 576px */
+  @media (max-width: 575.98px) {
+    /* Code… */
+  }
+  
