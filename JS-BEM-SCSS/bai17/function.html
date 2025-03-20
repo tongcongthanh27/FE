@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        
+
+
+
+        // spread o ham mui ten //
+
+        const tinhtong1 = (...args) => {
+            console.log(args);
+            let tong =0;
+            for (item of args){
+                tong += item;
+            }
+            return tong;
+        } 
+        let kq1 = tinhtong1(10,20,30,40,50,60);
+        console.log(kq1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="opentab()">
+        mo tab moi
+    </button>
+    <button onclick="closetab()">
+        dong tab 
+    </button>
+    <!-- <script>
+        let tab;
+        function opentab(){
+            tab = window.open("https://chatgpt.com/c/67d68341-93f4-800c-b6d9-856546e855cb", "_blank", "width=1600, height=600, top =200, left=200");
+        }
+        function closetab(){
+            tab.close();
+        }
+    </script> -->
+
+    <script>
+        let href = window.location.href;
+        console.log(href);
+        setTimeout(() =>{
+            console.log(href);
+        }, 5000);
+    </script>
+</body>
+</html>

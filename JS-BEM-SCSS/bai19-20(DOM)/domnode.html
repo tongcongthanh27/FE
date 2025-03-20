@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p>noi dung p</p> -->
+
+    <!-- <div id="ads">  </div>
+    <script>
+        var div = document.createElement("div");
+        div.innerHTML="hrhr";
+        console.log(div);
+
+        const divads = document.querySelector("#ads");
+        divads.appendChild(div);
+    </script>
+
+
+
+        <script>
+            var div = document.createElement("div");
+            const text = document.createTextNode("quang cao");
+            div.appendChild(div);
+            console.log(div);
+
+
+            const divads = document.querySelector("#ads");
+            divads.appendChild(div);
+        </script> -->
+
+
+
+
+    <ul id="menu">
+        <li>item </li>
+        <li>item </li>
+        <li>item </li>
+        <li>item </li>
+        <li>item </li>
+    </ul>
+    <button id="themmoi">them moi</button>
+    <script>
+        const menu = document.querySelector("#menu");
+
+
+        const button = document.querySelector("#themmoi");
+        button.onclick = function () {
+            const newitem = document.createElement("li");
+            newitem.innerHTML = "item moi";
+            menu.appendChild(newitem);
+        }
+    </script>
+</body>
+
+</html>

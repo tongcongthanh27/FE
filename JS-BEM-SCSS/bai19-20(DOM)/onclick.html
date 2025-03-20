@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .menu{
+            background-color: orange;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            display: none;
+        }
+        .menu.show{
+            display: block;
+        }
+        .menu ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            margin-top: 30px;
+        }
+        .menu ul li{
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu button{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .button{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    </style>
+    <div  class="menu" id="menu">
+        <button class="inner-close" id="buttonclose">
+            close
+        </button>
+        <ul>
+            <li>muc 1 </li>
+            <li>muc 2</li>
+            <li>muc 3 </li>
+        </ul>
+    </div>
+
+    <button class="button" id="buttonmenu">
+        menu
+    </button>
+
+    <script>
+
+        const buttonmenu = document.querySelector("#buttonmenu");
+        const menu = document.querySelector("#menu");
+
+
+        buttonmenu.onclick = function() {
+            menu.classList.add("show");
+        }
+
+        const buttonclose = document.querySelector("#buttonclose");
+        buttonclose.onclick = function() {
+            menu.classList.remove("show");
+        }
+    </script>
+</body>
+</html>

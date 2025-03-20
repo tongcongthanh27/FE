@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h1>nội dung thẻ h1</h1>
+
+    <a href="#">TRang fb</a> -->
+
+    <script>
+
+       // console.log(document)
+
+    </script>
+
+
+
+    <!-- dom element getelementid -->
+    <!-- <style>
+        .light{
+            background-color: lightblue;
+        }
+        .dark{
+            background-color: darkblue;
+            color: #FFF;
+        }
+    </style>
+     <div class="light " id ="box">noi dung</div>
+    <ul id="menu">
+        <li>muc 1</li>
+        <li>muc 2</li>
+        <li>muc 3</li>
+    </ul>
+     <script>
+
+        const box = document.getElementById("box");
+        box.classList.add("dark"); // add them class vao 
+        console.log(box);
+
+        const box1 = document.getElementById("menu");
+        console.log(box1);
+     </script> -->
+
+
+    <!-- getelementsbytagname  -->
+    <!-- <style>
+        
+    </style>
+     
+    <h2>the h2 01 </h2>
+    <h2>the h2 02 </h2>
+    <h2>the h2 03 </h2>
+    <h2>the h2 04 </h2>
+    <h2>the h2 05 </h2>
+     <script>
+
+        const listh2 = document.getElementsByTagName("h2");
+        console.log(listh2);
+        console.log(listh2[3]);
+     </script> -->
+
+     <!-- querySelector -->
+
+    <style>
+        .box1 .box2 h2 .link{
+            background-color: yellow;
+        }
+        .box1 .box2 h2 .link.active{
+            background-color: orange;
+        }
+    </style>
+     <div class="box1">
+        <div class="box2">
+            <h2>
+                <a href="#" class="link">noi dung the a</a>
+            </h2>
+            <h2>
+                <a href="#" class="link">noi dung the a</a>
+            </h2>
+        </div>
+     </div>
+     <script>
+        const element = document.querySelector(".box1 .box2 h2 .link");
+        element.classList.add("active");
+        console.log(active);
+     </script>
+</body>
+</html>

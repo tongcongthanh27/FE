@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        .focus{
+            background-color: yellow;
+        }
+    </style>
+    <input type="text" id="input-name" placeholder="hoten">
+
+    <script>
+        const inputname =document.querySelector("#input-name");
+        inputname.onblur = function() {
+            inputname.value=inputname.value.toUpperCase();
+        }
+        console.log(inputname);
+
+        inputname.onfocus = function() {
+            inputname.classList.add("focus");
+        }
+    </script>
+</body>
+
+</html>

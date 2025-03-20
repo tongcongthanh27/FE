@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <select name="" id="colors">
+        <option value="red">do</option>
+        <option value="yellow">vang</option>
+        <option value="black">den</option>
+    </select>
+
+    <script>
+        const colors = document.querySelector("#colors");
+        colors.onchange = function() {
+            let curcolor = colors.value;
+            console.log(curcolor);
+        }
+    </script>
+</body>
+</html>

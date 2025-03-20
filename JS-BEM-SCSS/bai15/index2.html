@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myString = `HTML5, CSS3, Javascript`;
+	console.log(myString.split()); // Cả string là 1 phần tử
+	console.log(myString.split("")); // Mỗi ký tự là 1 phần tử
+	console.log(myString.split(", ")); // Mỗi từ là 1 phần tử
+	console.log(myString.split(", ", 2)); // Mỗi từ là 1 phần tử, lấy tối đa 2 phần tử	
+
+
+    var list = ["HTML5", "CSS3", "Javascript"];
+	console.log(list.splice(0, 2, "Bootstrap 4", "ReactJS"));
+	console.log(list);
+	
+    var list = ["HTML5", "CSS3", "Javascript"];
+	var list2 = ["Bootstrap 4", "ReactJS"];
+    var list3;
+	console.log(list3=list.concat(list2));
+	// Trả về: ["HTML5", "CSS3", "Javascript", "Bootstrap 4", "ReactJS"]
+	
+    </script>
+</body>
+</html>

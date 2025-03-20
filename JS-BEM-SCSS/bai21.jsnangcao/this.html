@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script>
+        console.log(this.location.href);
+    </script> -->
+
+
+    <!-- <script>
+        "use strict";
+
+        function test() {
+            console.log(this);
+        }
+        test();
+    </script> -->
+
+    <!-- <button id="button">button</button>
+    <ul id = "menu">
+        <li>Muc 1</li>
+        <li>Muc 2</li>
+        <li>Muc 3</li>
+    </ul>
+    <script>
+        const button = document.querySelector("#button");
+        button.addEventListener("click", function() {
+            console.log(this);
+        });
+        const listitem = document.querySelectorAll("#menu li");
+        console.log(listitem);
+        [...listitem].forEach(function(item){
+            item.addEventListener("click", function(){
+                console.log(this);
+            });
+        });
+    </script> -->
+
+
+    <!-- this trong object  -->
+
+    <script>
+        let info = {
+            fullname: "tct",
+            age:18,
+            email: "thanh",
+            getfullname: function() {
+                console.log(this.fullname);
+            },
+            cccd: {
+               fullname: "TXT",
+               address: "123,duong abc",
+               getinfocccd: function() {
+                console.log(this.fullname);
+               }
+            }
+        };
+        info.getfullname();
+        info.cccd.getinfocccd();
+    </script>
+</body>
+</html>
